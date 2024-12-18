@@ -36,14 +36,16 @@
             </li>
             <li class="header__link-wrapper">
               <a href="./institution.html" class="header__link">
-               機構 Institution
+                機構 Institution
               </a>
             </li>
             <li class="header__link-wrapper">
               <a href="./project-1.html" class="header__link">專案 Project </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">關於我們 About Us </a>
+              <a href="./index.html#about" class="header__link"
+                >關於我們 About Us
+              </a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -100,12 +102,94 @@
       <div class="main-container">
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
+            <div class="carousel">
+              <div class="carousel-slides">
+                <img
+                  src="./assets/jpeg/Slide1.jpg"
+                  alt="Slide 1"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide2.jpg"
+                  alt="Slide 2"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide3.jpg"
+                  alt="Slide 3"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide4.jpg"
+                  alt="Slide 4"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide5.jpg"
+                  alt="Slide 5"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide6.jpg"
+                  alt="Slide 6"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide7.jpg"
+                  alt="Slide 7"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide8.jpg"
+                  alt="Slide 8"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide9.jpg"
+                  alt="Slide 9"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide10.jpg"
+                  alt="Slide 10"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide10.1.jpg"
+                  alt="Slide 10"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide11.jpg"
+                  alt="Slide 11"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide12.jpg"
+                  alt="Slide 12"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide13.jpg"
+                  alt="Slide 13"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide14.jpg"
+                  alt="Slide 14"
+                  class="carousel-image"
+                />
+                <img
+                  src="./assets/jpeg/Slide15.jpg"
+                  alt="Slide 15"
+                  class="carousel-image"
+                />
+              </div>
+              <button class="carousel-btn left-btn">❮</button>
+              <button class="carousel-btn right-btn">❯</button>
+            </div>
           </div>
+
           <div class="project-details__content-main">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
@@ -150,12 +234,11 @@
               <p class="project-details__desc-para">
                 Our vision materialized in the form of a compact PCB board,
                 featuring both brown and green solder mask variations. The
-                board, designated as KC-601-T (220505), showcases our attention
-                to detail with its precise component placement and professional
-                finishing. The centerpiece of our design is a robust blue
-                tactile switch, clearly marked with "REC" functionality,
-                providing users with reliable and responsive input capability.
-                [Component View]
+                board, showcases our attention to detail with its precise
+                component placement and professional finishing. The centerpiece
+                of our design is a robust blue tactile switch, clearly marked
+                with "REC" functionality, providing users with reliable and
+                responsive input capability. [Component View]
                 <img
                   src="assets/jpeg/img3.jpg"
                   alt="PCB Component Side"
@@ -184,6 +267,39 @@
                 requirements into an elegant, practical solution.
               </p>
               <!-- <p class="project-details__desc-para"></p> -->
+
+              <div
+                class="video-container"
+                style="
+                  position: relative;
+                  padding-bottom: 56.25%;
+                  height: 0;
+                  overflow: hidden;
+                  max-width: 100%;
+                  margin: 4rem 0;
+                "
+              >
+                <!-- Just change this part of the Youtube link 'ksFovPa5kaQ' -->
+                <iframe
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  src="https://www.youtube.com/embed/ksFovPa5kaQ"
+                  title="Project Video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <p class="project-details__desc-para">
+                Watch our project demonstration video to see the device in
+                action and learn more about its features and capabilities.
+              </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
@@ -195,17 +311,17 @@
             </div>
             <div class="project-details__links">
               <h3 class="project-details__content-title"></h3>
-              <!-- <a
-                href="#"
+              <a
+                href="https://www.youtube.com/"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
-              > -->
+                >Video</a
+              >
               <a
                 href="https://github.com/jinchunglee/Team1.github.io"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >Code Link</a
+                >Code</a
               >
             </div>
           </div>
