@@ -813,6 +813,57 @@ textarea {
 
 
 
+/* 圖集容器樣式 */
+/* 圖集容器樣式 */
+.carousel {
+  position: relative;
+  max-width: 100%; /* 父容器最大寬度 */
+  margin: 20px auto;
+  overflow: hidden; /* 隱藏超出範圍的內容 */
+  background-color: #f0f0f0; /* 背景色，讓效果更美觀 */
+}
+
+/* 圖片顯示區域 */
+.carousel-slides {
+  display: flex; /* 讓圖片橫向排列 */
+  transition: transform 0.5s ease-in-out; /* 平滑過渡效果 */
+}
+
+/* 每張圖片的樣式 */
+.carousel-image {
+  width: 100%; /* 圖片自動填滿父容器寬度 */
+  height: auto; /* 高度自動根據圖片比例調整 */
+  object-fit: contain; /* 確保圖片不變形，保持完整 */
+  flex-shrink: 0; /* 保證每張圖片的寬度一致 */
+}
+
+/* 左右按鈕樣式 */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
     
 @keyframes wheel {
   to {
@@ -823,3 +874,5 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+
